@@ -13,9 +13,9 @@
 
     <div class="grid-overlay" aria-hidden = "true"></div>
 
-    <header class="hero">
+    <header>
         <nav class="nav">
-            <span class="nav-mark">NS</span>
+            <span>NS</span>
             <div class = "nav-links">
                 <a href = "#about">About</a>
                 <a href = "#projects">Projects</a>
@@ -24,39 +24,34 @@
         </nav>
 
         <div class = "hero-content">
-            <svg class = "trace" viewBox = "0 0 600 60" preserveAspectRatio = none aria-hideen ="true">
-                <path d="M,30 L40,30 L55, 10 L70,50 L85,30 L120,30 L135,15 L150,45 L165,30 L200,30 L215,5 L230,55 L245,30 L600,30" />
+            <svg class = "trace" viewBox = "0 0 600 60" preserveAspectRatio = "none" aria-hidden ="true">
+                <path d="M0,30 L40,30 L55, 10 L70,50 L85,30 L120,30 L135,15 L150,45 L165,30 L200,30 L215,5 L230,55 L245,30 L600,30" />
             </svg>
-            <p class = "eyebrow">personal site </p>
             <h1>Naman Saxena</h1>
-            <p class = "tagline"> Engineering Student <span class="dot">•</span>Guitarist <span class="dot">•</span>Chess Player <span class="dot">•</span>Cricket Fan </p>
+            <p> Engineering Student<span> • </span>Guitarist<span> • </span>Chess Player<span> • </span>Cricket Fan </p>
         </div>
     </header>
 
     <main>
         <section id ="about" class ="section">
             <p class = "eyebrow">About</p>
-            <div class = "about-grid">
-                <div class = "about-text">
+            <div>
+                <div>
                     <h2>Hi, I'm Naman!</h2>
-                    <p> I'm into engineering, math, and science</p>
-                    <p> I like projects that are in the middle of physics, coding, and something that actually moves</p>
+                    <p> I'm into engineering, math, and science. When I'm not bulding something, usually I am playing my guitar, play chess or watching cricket/football.</p>
+                    <p> I like projects that are in the middle of physics, coding, and something that actually moves such as robotics.</p>
                 </div>
                 <ul class = "signals">
                     <li>
-                        <svg viewBox="0 0 24 24"><path d="M6 3v13a3 3 0 1 0 2 2.83V9l8-2v6.17a3 3 0 1 0 2 2.83V3l-12 3v0"/></svg>
                         <span>guitar</span>
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24"><path d="M12 2 L8 8 L16 8 Z M9 8 L9 16 L15 16 L15 8 M7 20 L17 20 L15 16 L9 16 Z M6 22 L18 22"/></svg>
                         <span>chess</span>
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24"><path d="M4 20 L18 6 M15 3 L21 9 M2 22 L5 19"/></svg>
                         <span>cricket</span>
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24"><path d="M4 6 L10 6 M4 12 L20 12 M4 18 L14 18 M17 4 L21 8 M21 4 L17 8"/></svg>
                         <span>math &amp; science</span> 
                     </li>
                 </ul>
@@ -65,18 +60,35 @@
 
         <section id="projects" class="section">
             <p class="eyebrow">projects</p>
-            <div class="projects-list">
+            <div>
 
                 <article class ="project">
-                    <div class="project-head">
+                    <div>
                         <h3>Drone Racing Simulator</h3>
                         <div class="tags">
                             <span>Python</span><span>Physics</span><span>Plotly</span>
                         </div>
                     </div>
-                    <p>TODO</p>
-                    <p class="project-note">TODO</p>
-                    <a class="project-link" href="https://nam2302.github.io/Drone-Simulation/" target="_blank" rel="noopener">View simulation &rarr;</a>
+                    <p>A 3D drone racing simulator that uses physics-based motion (gravity, thrust, drag) 
+                        and a PD controller to guide a drone through a series of 3D gates. 
+                        The simulation is visualized in an interactive Plotly 3D environment with an animated trajectory, 
+                        colour-coded speed, and real-time force vectors, along with play/pause controls and a time slider 
+                        for scrubbing through the motion</p>
+                    <a href="https://nam2302.github.io/Drone-Simulation/" target="_blank" rel="noopener">View simulation</a>
+                </article>
+
+                <article class ="project">
+                    <div>
+                        <h3>F1 Pulse Bot</h3>
+                        <div class="tags">
+                            <span>Slack API</span><span>Node</span><span>Linux</span>
+                        </div>
+                    </div>
+                    <p>F1 Pulse Bot is a Slack bot that provides real-time Formula 1
+                         updates, including the next race, current driver standings, 
+                         and random driver info. It uses live F1 data APIs and lets 
+                         users access key race insights directly inside Slack.</p>
+                    <a href="https://github.com/Nam2302/f1-pulse-bot" target="_blank" rel="noopener">View repo</a>
                 </article>
             </div>
         </section>
